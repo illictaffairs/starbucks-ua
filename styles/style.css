@@ -1,19 +1,14 @@
-:root, html[data-theme='light']{
+:root{
 	--accent: #006341;
 	--black: #000;
 	--white: #fff;
 	--red: #d30132;
 }
 
-html[data-theme='dark']{
-	--accent: #006341;
-	--black: #000;
-	--white: #fff;	
-	--red: #d30132;
-}
 *{
 	scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 .material-symbols-rounded {
   font-variation-settings:
@@ -24,6 +19,9 @@ html[data-theme='dark']{
 }
 /*==============================*/
 body{
+	position: relative;
+	width:100vw;
+	margin-top:10rem;
 	overflow: -moz-scrollbars-vertical;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -31,10 +29,16 @@ body{
 .font1{
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.font3{
+	font-family: 'Rubik Mono One', sans-serif;
+}
 .bold{
 	font-weight: 700;
 }
 #header-pc{
+	position: fixed;
+	top:0;
+	z-index:100;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 700;
 	width:100vw;
@@ -60,7 +64,6 @@ body{
 }
 .pc-header-container {
 	box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
-	margin-bottom:5rem;
 	background-color: white;
 	width:100%;
 	height:6rem;
@@ -114,7 +117,7 @@ body{
 .hero-pc{
 	margin: 2rem auto;
 	display: flex;
-	width:70%;
+	width:80%;
 	height:40rem;
 	justify-content: space-between;
 }
@@ -128,6 +131,7 @@ body{
     align-content: center;
 }
 .hero-text h1{
+	
 	font-size:2.3rem;
 	font-weight:700;
 	padding:1rem;
@@ -167,6 +171,17 @@ body{
 .nor:hover{
 	background: rgba(1,1,1,0.1);
 }
+.hero3{
+	background:#233428;
+	color: var(--white);
+}
+.hero3 a{
+	color: var(--white);
+}
+.hero3 button{
+	border: 2px var(--white) solid;
+	background: none;
+}
 /*==============================================*/
 .footer-pc-container{
 	box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
@@ -201,4 +216,26 @@ body{
 }
 #nav-footer a:hover{
 	opacity:1;
+}
+/*=====================================*/
+@media (max-width:1500px) {
+	.hero-pc{
+		width:100%;
+	}
+}
+@media (max-width:1000px) {
+	.hero-pc img{
+		object-fit: cover;
+		width:auto;
+		height:40rem;
+	}
+	.hero-pc{
+		height:65rem;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.hero-text{
+		height: 100%;
+	}
 }

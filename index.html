@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 	<!-- ===========template by: illictaffairs=========== -->
 	<!-- ================Imports========================= -->
@@ -12,6 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="assets\fonts\stylesheet.css">
 	<script type="text/javascript" src="./scripts/script.js"></script>
+	<!-- aos-->
+	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header id="header-pc" class="header-pc">
@@ -55,21 +58,29 @@
 		</div>
 	</header>
 	<div id="content-pc" class="content-pc">
-		<div class="hero-pc hero1">
+		<div class="hero-pc hero1" >
 			<div class="hero-text">
-				<h1 class="font1 bold">Святковий Настрій вже тут!</h1>
+				<h1 class="font3 bold">Святковий Настрій вже тут!</h1>
 				<p class="font1 normal">Порадуйте себе м'ятним мокко, імбірним лате або капучіно з карамельним брюле</p>
 				<button class="button nor"><a href="hero-more">Докладніше</a></button>
 			</div>
 			<img src="assets\images\hero-1.jpg"/>
 		</div>
-		<div class="hero-pc hero2">
+		<div class="hero-pc hero2" data-aos="fade-up">
 			<div class="hero-text">
-				<h1 class="font1 bold">Новий солодкий сінабон</h1>
+				<h1 class="font3 bold">Новий солодкий сінабон</h1>
 				<p class="font1 normal">Представляємо вам новий шоколадно-фісташковий сінабон з начинкою із шоколадного крему та подрібненими фісташками.</p>
 				<button class="button nor"><a href="hero-more">Докладніше</a></button>
 			</div>
 			<img src="assets\images\hero-2.jpg"/>
+		</div>
+		<div class="hero-pc hero3" data-aos="fade-up">
+			<div class="hero-text">
+				<h1 class="font3 bold">Зима вже близько!</h1>
+				<p class="font1 normal">І наше нове різдвяне меню також! Шукайте новорічні пропозиціі у вашому найближньому Starbucks вже з 5 листопада</p>
+				<button class="button nor"><a href="hero-more">Докладніше</a></button>
+			</div>
+			<img src="assets\images\hero-3.jpg"/>
 		</div>
 	</div>
 	<footer id="footer-pc" class="footer-pc">
@@ -122,7 +133,7 @@
 						<li><a href="#">Культурні Особливості</a></li>
 						<li><a href="#">Інвестиціі </a></li>
 						<li><a href="#">Історії та новини</a></li>
-						<li><a href="#">Архів Старбакса</a></li>
+						<li><a href="#">Архів Старбаксу</a></li>
 						<li><a href="#">Для інвесторів</a></li>
 						<li><a href="#">Обслуговування клієнтів</a></li>
 					</ul>
@@ -130,5 +141,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
